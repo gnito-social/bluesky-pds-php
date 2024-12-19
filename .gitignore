@@ -1,0 +1,54 @@
+*.lock
+/batch/vendor
+/php-libraries/**/vendor
+/node_modules
+/vendor
+/var/cache/*
+/var/log/*
+/public/userbulk/*
+!/public/userbulk/.gitignore
+/public/usermedia/*
+!/public/usermedia/.gitignore
+/features/bootstrap/debug
+/src/Migrations/*
+!/src/Migrations/.gitignore
+/app-cache
+/public/app-cache
+/bin/.phpunit
+.php-cs-fixer.cache
+/drivers/chromedriver
+/drivers/geckodriver
+
+# PHPStorm
+**/.idea
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/dev/dev.decrypt.private.php
+/config/secrets/test/test.decrypt.private.php
+/config/secrets/panther/panther.decrypt.private.php
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+/.phpunit.cache/
+###< phpunit/phpunit ###
+
+###> vincentlanglet/twig-cs-fixer ###
+/.twig-cs-fixer.cache
+###< vincentlanglet/twig-cs-fixer ###
+
+###> phpstan/phpstan ###
+#phpstan.neon
+###< phpstan/phpstan ###
+
+###> symfony/asset-mapper ###
+/public/assets/
+/assets/vendor/
+###< symfony/asset-mapper ###
